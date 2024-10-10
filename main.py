@@ -55,6 +55,14 @@ def main():
             if a.collides_with(player):
                 print("Game Over!")
                 return
+            for s in shot:
+                if a.collides_with(s):
+                    a.kill()
+                    s.kill()
+                    print("Asteroid destroyed!")
+
+            
+                
 
 
 if __name__ == "__main__":
