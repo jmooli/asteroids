@@ -57,7 +57,7 @@ def main():
                 return
             for s in shot:
                 if a.collides_with(s):
-                    a.kill()
+                    a.split()
                     s.kill()
                     print("Asteroid destroyed!")
 
